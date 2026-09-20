@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magma Security</title>
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #ff6b35;
+    --accent-blue: #38bdf8;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(30,41,59,0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+.logo {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+@media(min-width: 450px) {
+    .download-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-weight: 700;
+    transition: .2s;
+    flex: 1;
+}
+
+.download.mac {
+    background: var(--accent);
+}
+
+.download.windows-src {
+    background: #0284c7;
+}
+
+.download:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.setup-box {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.setup-box h3 {
+    font-size: 1.05rem;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.setup-box ol {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+.code-snippet {
+    background: #000;
+    font-family: monospace;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #34d399;
+    display: block;
+    margin: 6px 0;
+}
+
+.footer {
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo">🌋</div>
+
+    <h1>War Seige 1</h1>
+
+    <p class="tagline">
+        Gaming, Renewed
+    </p>
+
+    <p class="description">
+        A fun and fast game for u to play in your free time.
+    </p>
+
+    <div class="download-container">
+        <a class="download windows-src" href="WarSeige1Setup.exe" download>
+            War Seiege 1 for Windows Installer
+        </a>
+    </div>
+
+    <div class="setup-box">
+        <h3>🚀 Windows Setup Installation Guide</h3>
+        <ol>
+            <li>Click next a couple times :)</li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        Adam and David Games | 2026
+        <br>
+        App Verison 1.0.0
+    </div>
+</div>
+
+</body>
+</html>
